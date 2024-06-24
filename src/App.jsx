@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import SearchBar from './components/SearchBar'
 import SearchResultsList from './components/SearchResultsList'
+import Account from './components/Account'
 
 function App() {
   const [results, setResults] = useState([])
@@ -22,6 +23,7 @@ function App() {
             <input type="search" className="form-control me-2" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-light" type="submit">Search</button>
           </form> */}
+          <Account />
           <SearchBar setResults={setResults} />
           <SearchResultsList results={results} />
       </div>
